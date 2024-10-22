@@ -1,77 +1,43 @@
 {
-  // Hide the activity bar
-  "workbench.activityBar.visible": false,
-  // Hide the status bar
-  "workbench.statusBar.visible": false,
-  // Hide the minimap
-  "editor.minimap.enabled": false,
-  // Hide the scrollbars
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.overviewRulerBorder": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "color-highlight.markRuler": false,
-  // Hide bradcrumbs
-  "breadcrumbs.enabled": false,
-  // Hide identation guides
-  "workbench.tree.renderIndentGuides": "none",
-  "editor.guides.indentation": false,
-  // Hide open editors
-  "explorer.openEditors.visible": 0,
-  // Hide decoration colors
-  "explorer.decorations.colors": false,
-  // turn off brackets guides
-  "editor.guides.highlightActiveBracketPair": false,
-  "editor.guides.bracketPairsHorizontal": false,
-  // Smooth cursors
-  "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": "on",
-  // Line highlight
-  "editor.renderLineHighlight": "none",
-  // Editor left side
-  "editor.glyphMargin": false,
-  "editor.lineNumbers": "on",
-  "editor.showFoldingControls": "never",
-  // Title bar
-  "window.menuBarVisibility": "toggle",
-  "workbench.layoutControl.enabled": false,
-  "window.title": " ",
-  "window.commandCenter": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.editor.enablePreview": false,
-  "workbench.productIconTheme": "material-product-icons",
-  "workbench.colorTheme": "Andromeda Italic",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Hack Nerd Font",
-  "editor.rulers": [
-    125, 
-  ],
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
-  },
-  "isort.args": [
-    "--profile",
-    "black"
-  ],
-  "errorLens.fontStyleItalic": true,
-  "errorLens.onSave": true,
-  "errorLens.statusBarMessageTemplate": "$source $message",
-  "errorLens.decorations": {
+    // Set the theme to Noir Paimandres
+    "workbench.colorTheme": "Noir Poimandres",
+    // Enable font ligatures on the editor
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.fontSize": 16,
 
-    "errorRange": {},
-    "warningRange": {},
-    "infoRange": {},
-    "hintRange": {}
-  },
-  "errorLens.messageBackgroundMode": "none",
-  "errorLens.messageTemplate": "$source ($severity) - $message",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "editor.defaultFormatter": "charliermarsh.ruff",
-  "ruff.lint.run": "onSave",
-  "mypy-type-checker.importStrategy": "fromEnvironment",
+    // UI declutter
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "breadcrumbs.enabled": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "explorer.openEditors.visible": 1,
+    "explorer.decorations.colors": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.guides.indentation": false,
+    "editor.renderLineHighlight": "none",
+    "editor.glyphMargin": false,
+    "editor.showFoldingControls": "never",
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false,
+    "window.title": " ",
+    "window.commandCenter": false,
+
+    // Smooth cursors
+    "editor.cursorStyle": "underline",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.activityBar.location": "hidden",
+    "errorLens.onSave": true,
+    "errorLens.messageBackgroundMode": "none",
+    "errorLens.messageTemplate": "($severity) [$source] > $message",
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.iconTheme": "a-file-icon-vscode",
 }
